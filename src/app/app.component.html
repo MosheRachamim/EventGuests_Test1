@@ -303,7 +303,7 @@
                               <ul class="group">
                                 <li>
                                   <span>
-                                    אישרו: {{guestData.num_guests | 0}} הגיעו: {{guestData.new_num_guests | 0}}
+                                    אישרו: {{guestData.num_guests.value ? (a.value | number:0) : '0' }} הגיעו: {{guestData.new_num_guests.value ? (a.value | number:0) : '0' }}
                                   </span>
                                 </li>
                               </ul>
